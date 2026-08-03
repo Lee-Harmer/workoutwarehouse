@@ -294,6 +294,7 @@ p { font-size: 1rem; color: rgba(255,255,255,0.85); }
 }
 .mobile-nav a:hover { color: var(--neon-green); }
 .mobile-nav .btn { margin-top: 20px; text-align: center; justify-content: center; }
+.mobile-nav .btn-primary { color: #000; }
 
 /* ============================================================
    HERO SECTIONS
@@ -1603,28 +1604,51 @@ p { font-size: 1rem; color: rgba(255,255,255,0.85); }
 @media (max-width: 768px) {
   .section-pad { padding: 56px 0; }
 
+  .contact-reels { display: none; }
   .nav-links, .header-cta { display: none; }
   .hamburger { display: flex; }
+  .site-header,
+  .site-header.scrolled { background: #000; backdrop-filter: none; }
 
   h1 { font-size: clamp(2rem, 8vw, 3rem); }
   h2 { font-size: clamp(1.6rem, 6vw, 2.4rem); }
 
-  .offer-grid { grid-template-columns: 1fr 1fr; gap: 14px; }
-  .recovery-features { grid-template-columns: 1fr; }
+  .offer-grid { grid-template-columns: 1fr 1fr; gap: 10px; }
+  .offer-card { padding: 16px 12px; }
+  .offer-icon { width: 48px; height: 48px; font-size: 1.4rem; margin-bottom: 10px; }
+  .offer-card h3 { font-size: 1rem; margin-bottom: 4px; }
+  .offer-card p { font-size: 0.78rem; }
+  .recovery-features { grid-template-columns: 1fr; gap: 10px; }
+  .recovery-feature { padding: 16px 12px; }
+  .recovery-feature .icon { font-size: 1.4rem; margin-bottom: 6px; }
+  .recovery-feature h4 { font-size: 1rem; margin-bottom: 4px; }
+  .recovery-feature p { font-size: 0.78rem; }
   .recovery-images img:first-child { height: 160px; }
 
   .carousel-item { width: 260px; height: 200px; }
 
-  .merch-grid { grid-template-columns: 1fr 1fr; }
+  .merch-grid { grid-template-columns: repeat(3, 1fr); gap: 6px; margin-bottom: 20px; }
 
   .reviews-grid { grid-template-columns: 1fr; }
 
   .hours-strip-inner { grid-template-columns: 1fr; gap: 32px; }
+  .hours-strip-inner .contact-info { order: -1; }
 
-  .footer-grid { grid-template-columns: 1fr; }
-  .footer-bottom { flex-direction: column; text-align: center; }
+
+  .footer-grid { grid-template-columns: 1fr 1fr 1fr; gap: 20px; padding-bottom: 28px; }
+  .footer-brand { grid-column: 1 / -1; display: flex; align-items: center; gap: 16px; flex-wrap: wrap; padding-bottom: 12px; border-bottom: 1px solid var(--border); }
+  .footer-brand img { height: 36px; margin-bottom: 0; }
+  .footer-brand p { display: none; }
+  .footer-social { margin-top: 0; }
+  .footer-col h4 { font-size: 0.72rem; margin-bottom: 10px; }
+  .footer-col ul { gap: 6px; }
+  .footer-col ul li a { font-size: 0.78rem; }
+  .footer-col address { font-size: 0.78rem; line-height: 1.6; }
+  .footer-bottom { flex-direction: column; text-align: center; gap: 8px; padding: 14px 0; }
+  .site-footer { padding-top: 28px; }
 
   .spotlight-grid { grid-template-columns: 1fr; }
+  .additional-classes-grid { grid-template-columns: 1fr !important; }
 
   .pricing-grid { grid-template-columns: repeat(2, 1fr); }
 
@@ -1650,7 +1674,7 @@ p { font-size: 1rem; color: rgba(255,255,255,0.85); }
 
 @media (max-width: 480px) {
   .offer-grid { grid-template-columns: 1fr; }
-  .merch-grid { grid-template-columns: 1fr; }
+  .merch-grid { grid-template-columns: repeat(3, 1fr); }
   .pricing-grid { grid-template-columns: 1fr 1fr; }
   .extra-card-images { grid-template-columns: 1fr; height: auto; }
   .extra-card-images img { height: 160px; }
@@ -1675,9 +1699,11 @@ p { font-size: 1rem; color: rgba(255,255,255,0.85); }
 
   /* Spotlight image strip shorter */
   .spotlight-images { height: 140px; }
+  .spotlight-images img { height: 140px; }
 
-  /* Car wash images smaller */
-  .carwash-images img { height: 160px; }
+  /* Car wash images — 2x2 collage */
+  .carwash-images { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
+  .carwash-images img { height: 140px; }
 
   /* Event & challenge card body padding */
   .event-card-body { padding: 24px 20px; }
@@ -1730,7 +1756,7 @@ p { font-size: 1rem; color: rgba(255,255,255,0.85); }
   .challenge-banner { padding: 28px 16px; }
 
   /* Footer gap */
-  .footer-grid { gap: 24px; }
+  .footer-grid { gap: 14px; }
 
   /* Map shorter */
   .map-wrap { height: 260px; }
