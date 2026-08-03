@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Membership &amp; Pricing — The Workout Warehouse</title>
+  <meta name="description" content="Transparent, affordable membership pricing at The Workout Warehouse in Howick. Monthly, student, pensioner, day pass, week pass and bundle deals." />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="icon" type="image/png" href="Logo.png" />
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="site-header" id="site-header">
+    <a href="index.html" class="header-logo">
+      <img src="Logo.png" alt="The Workout Warehouse" />
+    </a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="classes.html">Classes</a>
+      <a href="membership.html">Membership</a>
+      <a href="levelup.html">Level Up</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <a href="contact.html" class="btn btn-primary btn-sm header-cta">Join Now</a>
+    <button class="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <nav class="mobile-nav">
+    <a href="index.html">Home</a>
+    <a href="classes.html">Classes</a>
+    <a href="membership.html">Membership</a>
+    <a href="levelup.html">Level Up</a>
+    <a href="blog.html">Blog</a>
+    <a href="contact.html">Contact</a>
+    <a href="contact.html" class="btn btn-primary">Join Now</a>
+  </nav>
+
+  <main>
+
+    <!-- ========== PAGE HERO ========== -->
+    <section class="page-hero">
+      <div class="hero-bg" style="background-image: url('Gym6.jpg');"></div>
+      <div class="hero-overlay"></div>
+      <div class="hero-blob hero-blob-1"></div>
+      <div class="hero-blob hero-blob-2"></div>
+      <div class="hero-blob hero-blob-3"></div>
+      <div class="page-hero-content">
+        <p class="eyebrow">Pricing</p>
+        <h1>Invest In<br><span class="neon-text">Yourself</span></h1>
+      </div>
+    </section>
+
+
+    <!-- ========== MONTHLY PRICES ========== -->
+    <section class="section-pad" style="background: var(--bg-section);">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="eyebrow">Monthly Membership</p>
+          <h2>Choose Your Plan</h2>
+          <div class="divider divider-center"></div>
+          <p>All monthly memberships include full gym access, group classes, and use of our private studios.</p>
+        </div>
+
+        <!-- Main memberships -->
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px; max-width: 640px; margin: 0 auto 48px;" class="reveal">
+          <div class="price-card" style="border-color: var(--border-neon); position: relative; overflow: visible;">
+            <div style="position: absolute; top: -14px; left: 50%; transform: translateX(-50%);">
+              <span class="tag tag-neon">Most Popular</span>
+            </div>
+            <div class="label">Standard</div>
+            <div class="amount">R550</div>
+            <div class="suffix">per month</div>
+            <div style="margin-top: 16px; padding-top: 16px; border-top: 1px solid var(--border);">
+              <p style="font-size: 0.8rem; color: var(--muted);">Full gym access + all classes</p>
+            </div>
+          </div>
+          <div class="price-card">
+            <div class="label">Student</div>
+            <div class="amount" style="color: var(--neon-gold);">R450</div>
+            <div class="suffix">per month</div>
+            <div style="margin-top: 16px; padding-top: 16px; border-top: 1px solid var(--border);">
+              <p style="font-size: 0.8rem; color: var(--muted);">Valid student card required</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Once-off / short-term options -->
+        <div class="section-header" style="margin-top: 48px;">
+          <p class="eyebrow">Short-Term &amp; Once-Off Options</p>
+          <h3 style="font-size: 1.8rem;">Flexible Options</h3>
+          <div class="divider divider-center divider-gold"></div>
+        </div>
+        <div class="pricing-grid reveal" style="max-width: 860px; margin: 0 auto 60px;">
+          <div class="price-card">
+            <div class="label">Joining Fee</div>
+            <div class="amount" style="font-size: 1.8rem; color: var(--neon-gold);">R200</div>
+            <div class="suffix">once-off</div>
+          </div>
+          <div class="price-card">
+            <div class="label">Day Pass</div>
+            <div class="amount" style="font-size: 1.8rem; color: var(--white);">R100</div>
+            <div class="suffix">per day</div>
+          </div>
+          <div class="price-card">
+            <div class="label">Gold Day Pass</div>
+            <div class="amount" style="font-size: 1.8rem; color: var(--neon-gold);">R150</div>
+            <div class="suffix">per day</div>
+          </div>
+          <div class="price-card">
+            <div class="label">Week Pass</div>
+            <div class="amount" style="font-size: 1.8rem; color: var(--neon-green);">R250</div>
+            <div class="suffix">7 days</div>
+          </div>
+          <div class="price-card">
+            <div class="label">Lost Card</div>
+            <div class="amount" style="font-size: 1.4rem; color: var(--muted);">R100</div>
+            <div class="suffix">replacement</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== BUNDLE DEALS ========== -->
+    <section id="bundles" class="bundle-section section-pad">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="eyebrow">Save More</p>
+          <h2>Monthly Bundle Deals</h2>
+          <div class="divider divider-center divider-gold"></div>
+          <p>Lock in longer and save. The more you commit, the more you save.</p>
+        </div>
+        <div class="bundle-table-wrap reveal">
+          <table class="bundle-table">
+            <thead>
+              <tr>
+                <th></th>
+                <th style="color: var(--neon-green);">3 Months</th>
+                <th style="color: #6699ff;">6 Months</th>
+                <th style="color: var(--neon-gold);">1 Year</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="row-label standard">
+                <td colspan="4">Standard</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td class="price-cell">R1,350</td>
+                <td class="price-cell">R2,600</td>
+                <td class="price-cell">R5,100</td>
+              </tr>
+              <tr class="row-label student">
+                <td colspan="4">Student</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td class="price-cell">R1,050</td>
+                <td class="price-cell">R2,000</td>
+                <td class="price-cell">R4,400</td>
+              </tr>
+              <tr class="row-label pension">
+                <td colspan="4">Pensioners</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td class="price-cell">R1,050</td>
+                <td class="price-cell">R2,000</td>
+                <td class="price-cell">R4,400</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div style="display: flex; gap: 32px; justify-content: center; margin-top: 32px; flex-wrap: wrap; text-align: center;" class="reveal">
+          <div>
+            <span style="font-size: 1.5rem;">🏆</span>
+            <p style="font-size: 0.8rem; color: var(--muted); margin-top: 6px;">Top Equipment</p>
+          </div>
+          <div>
+            <span style="font-size: 1.5rem;">💪</span>
+            <p style="font-size: 0.8rem; color: var(--muted); margin-top: 6px;">Great Atmosphere</p>
+          </div>
+          <div>
+            <span style="font-size: 1.5rem;">🔒</span>
+            <p style="font-size: 0.8rem; color: var(--muted); margin-top: 6px;">Secure Facility</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== RECOVERY ZONE ADD-ON ========== -->
+    <section id="recovery" class="section-pad" style="background: var(--bg);">
+      <div class="container">
+        <div class="recovery-addon reveal">
+          <div class="recovery-addon-content">
+            <p class="eyebrow" style="font-family: var(--font-head); font-size: 0.85rem; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: var(--neon-blue); margin-bottom: 8px;">Add-On</p>
+            <h2>Recovery Zone<br>Access</h2>
+            <div class="divider divider-blue"></div>
+            <p>Did you know The Workout Warehouse has its very own Recovery Zone? Training is only half the journey — recovery is where your body gets stronger.</p>
+            <ul style="margin: 16px 0 24px; display: flex; flex-direction: column; gap: 10px; color: rgba(255,255,255,0.75); font-size: 0.9rem;">
+              <li>🔥 Far-Infrared Sauna — soothe tired muscles and promote relaxation</li>
+              <li>❄️ Cold Plunge Bath — reduce inflammation and boost recovery</li>
+            </ul>
+            <div class="addon-price-badge">
+              <div class="price">R250</div>
+              <div class="period">/ month — Unlimited Access</div>
+            </div>
+            <p style="font-size: 0.875rem; color: var(--muted);">Give your body the recovery it deserves. Who's ready to take the plunge?</p>
+          </div>
+          <div class="recovery-addon-image">
+            <img src="Recovery Zone2.jpeg" alt="Recovery Zone" loading="lazy" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CTA STRIP ========== -->
+    <section class="section-pad-sm" style="background: var(--bg);">
+      <div class="container" style="text-align: center;">
+        <h3 class="reveal" style="font-size: 1.6rem; margin-bottom: 12px;">Ready to Start?</h3>
+        <p class="reveal" style="color: var(--muted); margin-bottom: 24px;">Pop in or give us a call. No complicated sign-up process — just show up and become part of the Warehouse family.</p>
+        <a href="contact.html" class="btn btn-outline btn-lg reveal">📍 Find Us</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="Logo.png" alt="The Workout Warehouse" />
+          <p>Howick's most complete fitness destination. Train hard, recover well, and build a community that keeps you coming back.</p>
+          <div class="footer-social">
+            <a href="https://www.instagram.com/the.workout.warehouse" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com/share/1EjubJLeHB/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://share.google/mesvVrDXHMTG3f7lh" target="_blank" rel="noopener" aria-label="Google"><i class="fa-brands fa-google"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Pages</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="classes.html">Classes</a></li>
+            <li><a href="membership.html">Membership</a></li>
+            <li><a href="levelup.html">Level Up</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Hours</h4>
+          <address style="font-size: 0.8rem; color: var(--muted); line-height: 2;">
+            Mon – Fri: 5am – 7pm<br>
+            Saturday: 6am – 11am<br>
+            Sunday: Closed
+          </address>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <address>
+            <strong>29 Bell Street</strong><br>
+            Howick, KZN 3290<br><br>
+            <strong><a href="tel:0715043101">071 504 3101</a></strong><br>
+            <a href="mailto:hmtraining@outlook.com">hmtraining@outlook.com</a>
+          </address>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 The Workout Warehouse. All rights reserved.</p>
+        <a href="https://leechify.com" target="_blank" rel="noopener" style="display: flex; align-items: center; gap: 8px; opacity: 0.4; transition: opacity 0.3s;" onmouseover="this.style.opacity=0.8" onmouseout="this.style.opacity=0.4"><span style="font-size: 0.75rem; color: rgba(255,255,255,0.6); font-family: var(--font-body);">Built by</span><img src="leechify-logo.webp" alt="Leechify" style="height: 36px; width: 160px; object-fit: cover; object-position: center 47%; filter: saturate(0) brightness(5);" /></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
